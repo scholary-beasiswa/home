@@ -8,6 +8,8 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
+    background-image: url("bg3.jpg");
+    width: 100%;
 }
 
 #head {

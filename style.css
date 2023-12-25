@@ -337,7 +337,7 @@ cursor: pointer;
         position: absolute;
         background-color: white;
         left: 55%;
-        top: 550%;
+        top: 480%;
     }
     .head-rank {
         width: 140px;
@@ -345,7 +345,7 @@ cursor: pointer;
         border: 1px red solid;
         text-align: center;
         position: absolute;
-        top: 530%;
+        top: 450%;
         left: 55%;
     }
     #ranking-list {
@@ -362,8 +362,8 @@ cursor: pointer;
         padding: 10px;
     }
     .goto-kuis {
-        top: 740px;
-        left: -15%;
+        top: 410%;
+        left: -10%;
     }
     .goto-kuis input,
     .goto-kuis button{

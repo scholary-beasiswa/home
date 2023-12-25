@@ -6,13 +6,18 @@
 }
 
 body {
-    height: 1000vh;
+    height: 100%;
 }
 video {
     position: absolute;
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+.bg2 {
+    position: absolute;
+    width: 0;
+    height: 0;
 }
 #navbar {
     position: fixed;
@@ -225,6 +230,7 @@ cursor: pointer;
 @media (min-width: 320px) and (max-width: 767px){
     body {
         height: 100%;
+        width: 100%;
     }
     #navbar {
         position: absolute;
@@ -239,6 +245,7 @@ cursor: pointer;
     .contentny {
         position: absolute;
         top: 20%;
+        left: 7%;
     }
     .mvp {
         display: grid;
@@ -247,6 +254,7 @@ cursor: pointer;
         margin: 10px 0;
     }
     .mvp div a{
+        position: relative;
         text-decoration: none;
         font-size: 14px;
         padding: 3px 70px;
@@ -328,8 +336,8 @@ cursor: pointer;
         border: 2px solid cyan;
         position: absolute;
         background-color: white;
-        left: 65%;
-        top: 900px;
+        left: 55%;
+        top: 550%;
     }
     .head-rank {
         width: 140px;
@@ -337,8 +345,8 @@ cursor: pointer;
         border: 1px red solid;
         text-align: center;
         position: absolute;
-        top: 870px;
-        left: 65%;
+        top: 530%;
+        left: 55%;
     }
     #ranking-list {
         display: flex;
@@ -376,8 +384,9 @@ cursor: pointer;
     }
     .bg2 {
         position: absolute;
-        top: 740px;
+        top: 100%;
         object-fit: cover;
         width: 100%;
+        height: 100%;
     }
 }

@@ -203,16 +203,11 @@ function startTimer() {
 
         if (timeLeft < 0) {
             clearInterval(timerInterval);
-            if (currentQuestionIndex < questions.length - 1) {
-                // If there are more questions, move to the next question
-                nextQuestion();
-            } else {
-                // If it's the last question, show the results
-                showResults();
-                setTimeout(() => {
-                    window.location.href = "https://github.com/scholary-beasiswa/home"; // Gantilah dengan nama file atau URL home Anda
-                }, 2000);
-            }
+            // If it's the time is end, show the results
+            showResults();
+            setTimeout(() => {
+                window.location.href = "https://scholary-beasiswa.github.io/home";
+            }, 2000)
         }
     }, 1000);
 }
@@ -254,7 +249,7 @@ function submitQuiz() {
     currentQuestionIndex++;
     showResults();
     setTimeout(() => {
-        window.location.href = "https://github.com/scholary-beasiswa/home"; // Gantilah dengan nama file atau URL home Anda
+        window.location.href = "https://scholary-beasiswa.github.io/home/"; // Gantilah dengan nama file atau URL home Anda
     }, 2000);
 }
 

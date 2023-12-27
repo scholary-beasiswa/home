@@ -152,7 +152,7 @@ function startTimer() {
                 // If it's the last question, show the results
                 showResults();
                 setTimeout(() => {
-                    window.location.href = "https://github.com/scholary-beasiswa/home"; // Gantilah dengan nama file atau URL home Anda
+                    window.location.href = "https://scholary-beasiswa.github.io/home"; // Gantilah dengan nama file atau URL home Anda
                 }, 2000);
             }
         }
@@ -196,7 +196,7 @@ function submitQuiz() {
     currentQuestionIndex++;
     showResults();
     setTimeout(() => {
-        window.location.href = "https://github.com/scholary-beasiswa/home"; // Gantilah dengan nama file atau URL home Anda
+        window.location.href = "https://scholary-beasiswa.github.io/home"; // Gantilah dengan nama file atau URL home Anda
     }, 2000);
 }
 

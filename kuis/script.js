@@ -1,29 +1,87 @@
 const questions = [
     {
-        question: 'What is the capital of France?',
+        question: 'Jika hari ini adalah hari Kamis, dan 30 hari lagi adalah hari Sabtu. Maka, besok hari?',
         answers: [
-            { text: 'Berlin', correct: false },
-            { text: 'Paris', correct: true },
-            { text: 'Madrid', correct: false },
-            { text: 'Rome', correct: false }
+            { text: 'Minggu', correct: false },
+            { text: 'Selasa', correct: false },
+            { text: 'Kamis', correct: false },
+            { text: 'Jumat', correct: true }
         ]
     },
     {
-        question: 'Which programming language is used for web development?',
+        question: 'Jika 3x+5=17, maka 2x+3=?',
         answers: [
-            { text: 'Java', correct: false },
+            { text: '4', correct: false },
+            { text: '6', correct: false },
+            { text: '10', correct: false },
+            { text: '11', correct: true }
+        ]
+    },
+    {
+        question: 'Mana yang bukan bahasa pemrograman?',
+        answers: [
             { text: 'Python', correct: false },
-            { text: 'HTML', correct: false },
-            { text: 'JavaScript', correct: true }
+            { text: 'HTML', correct: true },
+            { text: 'Javascript', correct: false },
+            { text: 'C', correct: false }
         ]
     },
     {
-        question: 'Apa ini?',
+        question: 'Jika semua siswa yang lulus ujian memiliki nilai di atas 70, dan nilai Andi adalah 55, Budi adalah 100, maka nilai Andi berapa persen dari nilai Budi?',
         answers: [
-            { text: 'anu', correct: false },
-            { text: 'itu', correct: true },
-            { text: 'aje', correct: false },
-            { text: 'ase', correct: false }
+            { text: '70%', correct: false },
+            { text: '65%', correct: false },
+            { text: '55%', correct: true },
+            { text: '100%', correct: false }
+        ]
+    },
+    {
+        question: 'Kemarin sore hujan disertai petir dan suara gemuruh. Hujan selalu disertai petir?',
+        answers: [
+            { text: 'Benar', correct: false },
+            { text: 'Salah', correct: true }
+        ]
+    },
+    {
+        question: '..., 5, 7, 9, 11, 13. Angka yang paling sesuai untuk melengkapi deret tersebut adalah...',
+        answers: [
+            { text: '4', correct: false },
+            { text: '3', correct: true },
+            { text: '2', correct: false },
+            { text: '1', correct: false }
+        ]
+    },
+    {
+        question: 'Jumlah benua di dunia ada...',
+        answers: [
+            { text: '5', correct: false },
+            { text: '6', correct: false },
+            { text: '7', correct: true },
+            { text: '8', correct: false }
+        ]
+    },
+    {
+        question: 'Nilai dari π (pi) adalah...?',
+        answers: [
+            { text: '90°', correct: false },
+            { text: '180°', correct: false },
+            { text: '3.14', correct: true },
+            { text: '4.31', correct: false }
+        ]
+    },
+    {
+        question: 'Ibukota Amerika Serikat adalah New York',
+        answers: [
+            { text: 'Benar', correct: false },
+            { text: 'Salah', correct: true }
+        ]
+    },
+    {
+        question: 'Fungsi F(x)=2x²-5x+10 memiliki titik..',
+        answers: [
+            { text: 'Maksimum', correct: false },
+            { text: 'Minimum', correct: true },
+            { text: 'Maksimum dan minimum', correct: false }
         ]
     },
     // Add more questions as needed
@@ -103,7 +161,7 @@ function selectAnswer(answerIndex) {
 
     if (correct) {
         selectedButton.classList.add('correct');
-        score++;
+        score+=10;
     }else {
         selectedButton.classList.add('incorrect');
     }
@@ -152,7 +210,7 @@ function startTimer() {
                 // If it's the last question, show the results
                 showResults();
                 setTimeout(() => {
-                    window.location.href = "https://scholary-beasiswa.github.io/home"; // Gantilah dengan nama file atau URL home Anda
+                    window.location.href = "https://github.com/scholary-beasiswa/home"; // Gantilah dengan nama file atau URL home Anda
                 }, 2000);
             }
         }
@@ -196,7 +254,7 @@ function submitQuiz() {
     currentQuestionIndex++;
     showResults();
     setTimeout(() => {
-        window.location.href = "https://scholary-beasiswa.github.io/home"; // Gantilah dengan nama file atau URL home Anda
+        window.location.href = "https://github.com/scholary-beasiswa/home"; // Gantilah dengan nama file atau URL home Anda
     }, 2000);
 }
 

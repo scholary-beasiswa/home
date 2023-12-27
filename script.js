@@ -15,6 +15,13 @@ const exploreButton = document.getElementById('explore');
         // Redirect to the desired page
         window.location.href = 'daftar/daftar.html';
 });
+const loginButton = document.getElementById('login');
+
+    // Add a click event listener to the button
+    loginButton.addEventListener('click', () => {
+        // Redirect to the desired page
+        window.location.href = 'daftar/daftar.html';
+});
 const startQuizBtn = document.getElementById('startQuizBtn');
 const userInput = document.getElementById('user');
 startQuizBtn.addEventListener('click', () => {

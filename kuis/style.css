@@ -42,7 +42,7 @@ body {
     justify-self: center;
     flex-direction: column;
     gap: 10px;
-    margin: 0 190px;
+    margin: 0 12%;
 }
 
 #next-button {
@@ -84,4 +84,17 @@ body {
     top: 15%;
     font-size: 2em;
 }
-
+@media (min-width: 320px) and (max-width: 767px){
+    #quiz-container {
+        max-width: 400px;
+        width: 400px;
+        padding: 20px 0;
+        background-color: cyan;
+        border-radius: 10px;
+        text-align: center;
+    }
+    #answer-button {
+        width: 100px;
+        background-color: white;
+    }
+}
